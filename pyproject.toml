@@ -1,0 +1,22 @@
+[project]
+name = "pomodoro-poetry"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Lora34",email = "my34pochta@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi (>=0.115.8,<0.116.0)",
+    "pydantic-settings (>=2.8.1,<3.0.0)",
+    "redis (>=5.2.1,<6.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "pomodoro_poetry", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
